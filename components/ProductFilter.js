@@ -21,8 +21,6 @@ const ProductFilter = () => {
       dispatch(sortProducts('asc'));
     } else if (sortData === 'High to Low') {
       dispatch(sortProducts('desc'));
-    } else {
-      dispatch(getAllProducts());
     }
   }, [filterData, sortData]);
 
